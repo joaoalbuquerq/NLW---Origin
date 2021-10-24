@@ -8,6 +8,7 @@
     <!-- ICONS -->
     <link rel="stylesheet" href="assets/fonts/style.css">
     <!-- STYLES -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 
     <!-- FONTS -->
@@ -15,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+    
     <title>OriginSix</title>
 </head>
 <body>
@@ -103,69 +105,75 @@
         </section>
 
         <!-- TESTIMONIALS -->
-        <div class="divider-1"></div>
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="tittle">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/65.jpg"
+                      alt="Foto de Wanessa Souza"
+                    />
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
 
-        <section class="section" id="services">
-            <div class="container grid">
-            <header>
-                <h2 class="tittle">Depoimentos de quem já passou por aqui</h2>
-            </header>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/27.jpg"
+                      alt="Foto de Franciele Venega"
+                    />
+                    Franciele Venega
+                  </cite>
+                </blockquote>
+              </div>
 
-            <div class="testimonials">
-                <div class="testmonial">
-
-                    <blockquote>
-                        <p>
-                            <span>&ldquo;</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Neque aperiam, sapiente numquam dicta est laborum iste unde mollitia officiis.
-                        </p>
-    
-                        <cite>
-                            <img src="https://randomuser.me/api/portraits/women/60.jpg" alt="Foto de Wanessa, uma mulher de cabelos castanhos claros.">
-                            Wanessa Souza
-                        </cite>
-                    </blockquote>
-                    
-                </div>
-
-                <div class="testmonial">
-
-                    <blockquote>
-                        <p>
-                            <span>&ldquo;</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Neque aperiam, sapiente numquam dicta est laborum iste unde mollitia officiis.
-                        </p>
-    
-                        <cite>
-                            <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Foto de Franciele, uma mulher negra de cabelos cacheados sorrindo.">
-                            Franciele Albuquerque
-                        </cite>
-                    </blockquote>
-                    
-                </div>
-
-                <div class="testmonial">
-
-                    <blockquote>
-                        <p>
-                            <span>&ldquo;</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Neque aperiam, sapiente numquam dicta est laborum iste unde mollitia officiis.
-                        </p>
-    
-                        <cite>
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Vivian, uma mulher loira de cabelo curto sorrindo.">
-                            Vivian Lindelof
-                        </cite>
-                    </blockquote>
-                    
-                </div>
-                
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/17.jpg"
+                      alt="Fotos de Valeska Fabris"
+                    />
+                    Valeska Fabris
+                  </cite>
+                </blockquote>
+              </div>
             </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-        </section>
+      </section>
+
+      <div class="divider-2"></div>
 
 
         <!-- CONTACT -->
@@ -173,6 +181,7 @@
     
 
     <!-- SCRIPTS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
