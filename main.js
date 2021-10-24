@@ -55,7 +55,20 @@ scrollReveal.reveal(`
 #about .image, #about .text,
 #services header, #services .card,
 #testimonials header, #testmonials .testimonials,
-#contact .text, #contact .links    
+#contact .text, #contact .links ,
+footer .brad, footer .social   
 `,
 {interval: 100}
 )
+
+
+// BOTÃO DE VOLTAR PARA O TOPO
+
+const backToTopButton = document.querySelector('.back-to-top')
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= 560){
+        backToTopButton.classList.add('show');
+    }else{
+        backToTopButton.classList.remove('show');
+    }
+})
