@@ -20,16 +20,24 @@ for(const l of links){
 
 // MUDAR O HEADER DA PÁGINA QUANDO DE SCROLL
 
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight;
+
+
+function changeHeaderWhenScroll(){
+    const header = document.querySelector('#header')
+    const navHeight = header.offsetHeight;
+
+        if(window.scrollY >= navHeight){
+            header.classList.add('scroll')
+        }else{
+            header.classList.remove('scroll')
+        }
+}
 
 window.addEventListener('scroll', function(){
-    if(window.scrollY >= navHeight){
-        header.classList.add('scroll')
-    }else{
-        header.classList.remove('scroll')
-    }
+    changeHeaderWhenScroll();
 })
+
+
 
 
 // CARROSSEL DE TESTEMUNHOS
@@ -63,12 +71,17 @@ footer .brad, footer .social
 
 
 // BOTÃO DE VOLTAR PARA O TOPO
+function backToTop(){
 
-const backToTopButton = document.querySelector('.back-to-top')
-window.addEventListener('scroll', () => {
+    const backToTopButton = document.querySelector('.back-to-top')
+
     if(window.scrollY >= 560){
         backToTopButton.classList.add('show');
     }else{
         backToTopButton.classList.remove('show');
     }
+}
+window.addEventListener('scroll', () => {
+    changeHeaderWhenScroll();
+    backToTop();
 })
