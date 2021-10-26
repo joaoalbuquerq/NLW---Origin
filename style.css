@@ -552,6 +552,9 @@ footer i{
 
 @media(min-width: 1200px){
     
+    .section{
+        padding: 10rem 0;
+    }
     main{
         margin-top: var(--header-height);
     }
