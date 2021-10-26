@@ -31,7 +31,11 @@ img{
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
-    --header-height: 4.5rem;
+    --header-height: 4.5rem; 
+
+    --title-font-size: 11.875rem;
+    --subtitle-font-size: 1rem;
+
   }
 
 /*============= base =============*/
@@ -97,7 +101,7 @@ body{
 }
 
 .section{
-    padding: 5rem 0;
+    padding: calc(5rem + var(--header-height))0;
 }
 
 .section header{
@@ -110,6 +114,10 @@ body{
 
 .section .tittle{
     margin-bottom: 1rem;
+}
+
+.section .subtitle{
+    font-size: var(--subtitle-font-size);
 }
 
 #header{
@@ -265,11 +273,6 @@ nav.show div.icon-close{
 }
 
 /* ============= HOME =============*/
-
-main{
-    margin-top: calc(var(--header-height) + 2rem);
-}
-
 #home{
     overflow: hidden;
 }
@@ -483,6 +486,10 @@ footer{
     background: var(--base-color);
 }
 
+footer.section{
+    padding: 4rem 0;
+}
+
 footer .logo{
     display: inline-block;
     margin-bottom: 1.5rem;
@@ -493,8 +500,12 @@ footer .brad p{
     margin-bottom: 0.75rem;
 }
 
+footer .social{
+    grid-auto-flow: column;
+    width: fit-content; /*A largura é definida pelo tamanho do conteúdo do elemento*/
+}
+
 footer .social a{
-    margin-right: 2rem;
     transition: .3s;
     display: inline-block;
 }
@@ -533,5 +544,23 @@ footer i{
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+}
+
+
+
+/* RESPONSIVE */
+
+@media(min-width: 1200px){
+    
+    main{
+        margin-top: var(--header-height);
+    }
+}
+
+@media (min-width: 992){
+    :root{
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
 }
 
